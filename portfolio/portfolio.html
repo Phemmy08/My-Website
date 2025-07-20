@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Projects</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-gradient"></div>
+    <div class="floating-shapes"></div>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="portfolio-header">
+                <span class="section-tag">My Work</span>
+                <h1 class="portfolio-title">
+                    <span class="title-highlight">Portfolio</span>
+                    <span class="title-subtitle">Showcasing My Creative Journey</span>
+                </h1>
+                <p class="portfolio-description">
+                    Explore a collection of my recent projects, where creativity meets functionality. 
+                    Each project represents a unique challenge solved with modern technologies and innovative design.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i>
+                    All Projects
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <i class="fas fa-globe"></i>
+                    Web Development
+                </button>
+                <button class="filter-btn" data-filter="app">
+                    <i class="fas fa-mobile-alt"></i>
+                    Applications
+                </button>
+                <button class="filter-btn" data-filter="design">
+                    <i class="fas fa-paint-brush"></i>
+                    UI/UX Design
+                </button>
+                <button class="filter-btn" data-filter="tools">
+                    <i class="fas fa-tools"></i>
+                    Tools & Utilities
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image-container">
+                        <img src="../assets/dayspring.png" alt="Church Website" class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <button class="preview-btn" data-project="church">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                
+                                <a href="https://www.dayspringseraphicchurch.org/" target="_blank" class="live-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web Development</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="project-title">Dayspring Seraphic Church Website</h3>
+                        <p class="project-description">
+                            A modern, responsive church website featuring event management, sermon uploads, 
+                            and community engagement tools. Built with focus on accessibility and user experience.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>500+ Users</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>5.0 Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="tools" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image-container">
+                        <img src="../assets/aggregate.png" alt="Aggregate Calculator" class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <button class="preview-btn" data-project="calculator">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                <a href="https://aggcalculator.vercel.app/" target="_blank" class="live-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Tools & Utilities</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="project-title">Aggregate Calculator</h3>
+                        <p class="project-description">
+                            Educational tool for calculating JAMB and O'Level aggregate scores. 
+                            Features multiple grading systems, instant calculations, and result saving capabilities.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Local Storage</span>
+                            <span class="tech-tag">PWA</span>
+                            <span class="tech-tag">Mobile-First</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-calculator"></i>
+                                <span>1000+ Calculations</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span>200+ Downloads</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                                <!-- Project - Mascot Consortium -->
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image-container">
+                        <img src="../assets/mascot.png" alt="Mascot Consortium Website" class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <button class="preview-btn" data-project="mascot">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                <a href="https://mascot-delta.vercel.app/" target="_blank" class="live-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge in-progress">In Progress</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web Development</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="project-title">Mascot Consortium</h3>
+                        <p class="project-description">
+                            Professional business services website offering writing, branding, and administration solutions. 
+                            Features comprehensive service packages, S.P.A. Model integration, and client-oriented approach for business development.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Business Services</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>Client-Focused</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                                <!-- Project - Tolulope Portfolio -->
+                <div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image-container">
+                        <img src="../assets/tolulope.png" alt="Tolulope Portfolio Website" class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <button class="preview-btn" data-project="tolulope">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                <a href="https://toluexclusive.vercel.app/" target="_blank" class="live-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web Development</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="project-title">Tolulope Exclusive Portfolio</h3>
+                        <p class="project-description">
+                            Professional portfolio website for an entrepreneur, business coach, and content writer. 
+                            Showcases services including content writing, business coaching, and digital skills with clean, modern design.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Portfolio Design</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-pen-nib"></i>
+                                <span>Content Writing</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Business Coaching</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                                <!-- Project - Kingdom Life International Academy -->
+                <div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image-container">
+                        <img src="../assets/kingdom.png" alt="Kingdom Life International Academy Website" class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <button class="preview-btn" data-project="kingdom">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                <a href="https://kingdom-i3no.vercel.app/index.html" target="_blank" class="live-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge in-progress">In Progress</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web Development</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="project-title">Kingdom Life International Academy</h3>
+                        <p class="project-description">
+                            Educational institution website for Kingdom Life International Academy Nigeria (KLIAN). 
+                            Features school information, achievements showcase, and professional academic presentation with focus on "Raising the Foundations of many Generations".
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Educational Design</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>100% Graduation Rate</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>20:1 Student Ratio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                                <!-- Project - Velocity Flex Company -->
+                <div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image-container">
+                        <img src="../assets/velocity.png" alt="Velocity Flex Company Website" class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <button class="preview-btn" data-project="velocity">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                <a href="https://velocity-tau-nine.vercel.app/" target="_blank" class="live-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web Development</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="project-title">Velocity Flex Company</h3>
+                        <p class="project-description">
+                            Professional remote employment website for Velocity Flex Company, offering W-2 remote job opportunities across the US and Canada. 
+                            Features comprehensive job listings, company benefits, and streamlined application process for remote workers.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Corporate Design</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Remote Jobs</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-globe-americas"></i>
+                                <span>US & Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Project - Velocity Flex Assessment Portal -->
+<div class="project-card hidden-project" data-category="tools" data-aos="fade-up" data-aos-delay="1400">
+    <div class="project-image-container">
+        <img src="../assets/velocityassessment.png" alt="Velocity Flex Assessment Portal" class="project-image">
+        <div class="project-overlay">
+            <div class="overlay-content">
+                <button class="preview-btn" data-project="velocityassessment">
+                    <i class="fas fa-eye"></i>
+                    Preview
+                </button>
+                <a href="https://assessment1-hazel1-mu.vercel.app/" target="_blank" class="live-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Site
+                </a>
+            </div>
+        </div>
+        <div class="project-status">
+            <span class="status-badge completed">Completed</span>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-category">Tools & Utilities</span>
+            <span class="project-date">2024</span>
+        </div>
+        <h3 class="project-title">Velocity Flex Assessment Portal</h3>
+        <p class="project-description">
+            Official assessment platform for Velocity Flex Company applicants, evaluating skills for remote positions. 
+            Measures problem-solving abilities and preparedness for data entry, virtual assistance, and customer support roles.
+        </p>
+        <div class="project-technologies">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Assessment System</span>
+        </div>
+        <div class="project-stats">
+            <div class="stat-item">
+                <i class="fas fa-clipboard-check"></i>
+                <span>Skill Assessment</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>24-48hr Response</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <!-- Project - White Mountain Massage and Spa -->
+<div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="800">
+    <div class="project-image-container">
+        <img src="../assets/whitemountain.png" alt="White Mountain Massage and Spa Website" class="project-image">
+        <div class="project-overlay">
+            <div class="overlay-content">
+                <button class="preview-btn" data-project="whitemountain">
+                    <i class="fas fa-eye"></i>
+                    Preview
+                </button>
+                <a href="https://whitemountain.vercel.app/" target="_blank" class="live-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Site
+                </a>
+            </div>
+        </div>
+        <div class="project-status">
+            <span class="status-badge completed">Completed</span>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-category">Web Development</span>
+            <span class="project-date">2024</span>
+        </div>
+        <h3 class="project-title">White Mountain Massage & Spa</h3>
+        <p class="project-description">
+            Professional wellness and spa services website featuring massage therapy offerings, service descriptions, 
+            and booking information. Clean, calming design focused on relaxation and well-being.
+        </p>
+        <div class="project-technologies">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Wellness Design</span>
+        </div>
+        <div class="project-stats">
+            <div class="stat-item">
+                <i class="fas fa-spa"></i>
+                <span>Spa Services</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-phone"></i>
+                <span>Contact Ready</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Project - C&S Ministers Blog -->
+<div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="900">
+    <div class="project-image-container">
+        <img src="../assets/c&s.png" alt="C&S Ministers Blog Website" class="project-image">
+        <div class="project-overlay">
+            <div class="overlay-content">
+                <button class="preview-btn" data-project="csministers">
+                    <i class="fas fa-eye"></i>
+                    Preview
+                </button>
+                <a href="https://blog-iota-ten-94.vercel.app/" target="_blank" class="live-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Site
+                </a>
+            </div>
+        </div>
+        <div class="project-status">
+            <span class="status-badge in-progress">In Progress</span>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-category">Web Development</span>
+            <span class="project-date">2024</span>
+        </div>
+        <h3 class="project-title">C&S Ministers Blog</h3>
+        <p class="project-description">
+            Cherubim & Seraphim Ministers biography project preserving inspiring stories of dedicated church ministers. 
+            Features minister profiles, spiritual guidance content, and legacy preservation with clean, reverent design.
+        </p>
+        <div class="project-technologies">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Blog System</span>
+        </div>
+        <div class="project-stats">
+            <div class="stat-item">
+                <i class="fas fa-cross"></i>
+                <span>Ministry Focus</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-book-open"></i>
+                <span>Biography Project</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Project - Tolu Hairssentials -->
+<div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="1000">
+    <div class="project-image-container">
+        <img src="../assets/hairssentials.png" alt="Tolu Hairssentials E-commerce Website" class="project-image">
+        <div class="project-overlay">
+            <div class="overlay-content">
+                <button class="preview-btn" data-project="hairssentials">
+                    <i class="fas fa-eye"></i>
+                    Preview
+                </button>
+                <a href="https://tolu-hairsenntials.vercel.app/" target="_blank" class="live-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Site
+                </a>
+            </div>
+        </div>
+        <div class="project-status">
+            <span class="status-badge in-progress">In Progress</span>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-category">Web Development</span>
+            <span class="project-date">2024</span>
+        </div>
+        <h3 class="project-title">Tolu Hairssentials E-commerce</h3>
+        <p class="project-description">
+            Natural haircare e-commerce platform featuring quality, safe products for men, women, and kids. 
+            Complete online store with product categories, pricing, and shopping functionality for hair growth solutions.
+        </p>
+        <div class="project-technologies">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">E-commerce</span>
+        </div>
+        <div class="project-stats">
+            <div class="stat-item">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Online Store</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-leaf"></i>
+                <span>Natural Products</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Project - Young Legend Hub -->
+<div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="1100">
+    <div class="project-image-container">
+        <img src="../assets/younglegend.png" alt="Young Legend Hub Educational Website" class="project-image">
+        <div class="project-overlay">
+            <div class="overlay-content">
+                <button class="preview-btn" data-project="younglegend">
+                    <i class="fas fa-eye"></i>
+                    Preview
+                </button>
+                <a href="https://younglegend.vercel.app/" target="_blank" class="live-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Site
+                </a>
+            </div>
+        </div>
+        <div class="project-status">
+            <span class="status-badge completed">Completed</span>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-category">Web Development</span>
+            <span class="project-date">2023</span>
+        </div>
+        <h3 class="project-title">Young Legend Hub</h3>
+        <p class="project-description">
+            Educational services platform offering online tutoring, graphics design, exam registration, and mobile data services. 
+            Multi-service hub with experienced tutors, student testimonials, and comprehensive academic support.
+        </p>
+        <div class="project-technologies">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Educational Platform</span>
+        </div>
+        <div class="project-stats">
+            <div class="stat-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>5+ Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <span>Student Reviews</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Project - Original Portfolio Website -->
+<div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="1200">
+    <div class="project-image-container">
+        <img src="../assets/originalportfolio.png" alt="Original Portfolio Website" class="project-image">
+        <div class="project-overlay">
+            <div class="overlay-content">
+                <button class="preview-btn" data-project="originalportfolio">
+                    <i class="fas fa-eye"></i>
+                    Preview
+                </button>
+                <a href="https://oluwafemiweb.vercel.app/" target="_blank" class="live-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Site
+                </a>
+            </div>
+        </div>
+        <div class="project-status">
+            <span class="status-badge learning">First Portfolio</span>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-category">Web Development</span>
+            <span class="project-date">2023</span>
+        </div>
+        <h3 class="project-title">My Original Portfolio Website</h3>
+        <p class="project-description">
+            My very first personal portfolio website showcasing my web development journey. 
+            Features my skills, early projects, and contact information with a clean, simple design that marked the beginning of my career.
+        </p>
+        <div class="project-technologies">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">First Portfolio</span>
+        </div>
+        <div class="project-stats">
+            <div class="stat-item">
+                <i class="fas fa-rocket"></i>
+                <span>Career Start</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-history"></i>
+                <span>Journey Begin</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project - U.S. Man Business Ventures -->
+<div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="1300">
+    <div class="project-image-container">
+        <img src="../assets/usmanbusiness.png" alt="U.S. Man Business Ventures Website" class="project-image">
+        <div class="project-overlay">
+            <div class="overlay-content">
+                <button class="preview-btn" data-project="usmanbusiness">
+                    <i class="fas fa-eye"></i>
+                    Preview
+                </button>
+                <a href="https://usmanbusiness.vercel.app/" target="_blank" class="live-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Site
+                </a>
+            </div>
+        </div>
+        <div class="project-status">
+            <span class="status-badge learning">Training Project</span>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="project-meta">
+            <span class="project-category">Web Development</span>
+            <span class="project-date">2023</span>
+        </div>
+        <h3 class="project-title">U.S. Man Business Ventures</h3>
+        <p class="project-description">
+            Early training project for a multi-service business center offering computer training, printing services, 
+            WAEC/JAMB registration, and various administrative services. Simple design focused on learning fundamentals.
+        </p>
+        <div class="project-technologies">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">Basic Forms</span>
+            <span class="tech-tag">Learning Project</span>
+        </div>
+        <div class="project-stats">
+            <div class="stat-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Training Phase</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-tools"></i>
+                <span>Skill Building</span>
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- Project 3 -->
+                <div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image-container">
+                        <img src="../assets/taco-shop.png" alt="First Frontend Project" class="project-image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <button class="preview-btn" data-project="first">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                <a href="https://phemmyexpert.netlify.app/" target="_blank" class="live-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge learning">Learning Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web Development</span>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <h3 class="project-title">My First Frontend Project</h3>
+                        <p class="project-description">
+                            The beginning of my web development journey. A foundational project where I learned 
+                            HTML, CSS fundamentals, and basic responsive design principles.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Flexbox</span>
+                            <span class="tech-tag">Grid</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-code"></i>
+                                <span>First Project</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Example additional project -->
+                <div class="project-card hidden-project" data-category="app" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image-container">
+                        <div class="placeholder-image">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Coming Soon</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <button class="preview-btn disabled">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                <button class="live-btn disabled">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Coming Soon
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge in-progress">In Progress</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Mobile App</span>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            A modern task management application with real-time collaboration, 
+                            deadline tracking, and team productivity insights. Currently in development.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-clock"></i>
+                                <span>In Development</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-percentage"></i>
+                                <span>75% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Example design project -->
+                <div class="project-card hidden-project" data-category="design" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image-container">
+                        <div class="placeholder-image design-placeholder">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Design Project</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <button class="preview-btn" data-project="design">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                <button class="live-btn disabled">
+                                    <i class="fas fa-figma"></i>
+                                    Figma
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">UI/UX Design</span>
+                            <span class="project-date">2024</span>
+                        </div>
+                        <h3 class="project-title">E-Commerce App Design</h3>
+                        <p class="project-description">
+                            Complete UI/UX design for a modern e-commerce mobile application. 
+                            Includes user research, wireframes, prototypes, and design system.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Adobe XD</span>
+                            <span class="tech-tag">Prototyping</span>
+                            <span class="tech-tag">User Research</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-palette"></i>
+                                <span>15 Screens</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>User Tested</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Example web project -->
+                <div class="project-card hidden-project" data-category="web" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image-container">
+                        <div class="placeholder-image web-placeholder">
+                            <i class="fas fa-globe"></i>
+                            <span>Web Project</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <button class="preview-btn disabled">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                                <button class="live-btn disabled">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Coming Soon
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge planning">Planning</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web Development</span>
+                            <span class="project-date">2025</span>
+                        </div>
+                        <h3 class="project-title">Portfolio Dashboard</h3>
+                        <p class="project-description">
+                            An interactive dashboard for managing and showcasing portfolio projects. 
+                            Features analytics, project management, and client communication tools.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Concept</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Q2 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    <i class="fas fa-plus"></i>
+                    Load More Projects
+                </button>
+            </div>
+
+            <!-- Portfolio Stats -->
+            <div class="portfolio-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="6">0</h3>
+                        <p class="stat-label">Total Projects</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="10000">0</h3>
+                        <p class="stat-label">Lines of Code</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="500">0</h3>
+                        <p class="stat-label">Happy Users</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="1000">0</h3>
+                        <p class="stat-label">Hours Coded</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
