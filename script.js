@@ -162,7 +162,7 @@ function initCounters() {
     }
 }
 
-// Contact Form Functionality
+/* // Contact Form Functionality
 function initContactForm() {
     const contactForm = document.getElementById('contactForm');
     
@@ -192,7 +192,7 @@ function initContactForm() {
         contactForm.reset();
     });
 }
-
+ */
 // Email validation
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
